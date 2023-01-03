@@ -6,6 +6,7 @@ $second-color: #32191f;
 body{
     font-family: 'Fira Sans', sans-serif;
     color: $second-color;
+    position: relative;
 }
 .btn{
     &__action{
@@ -429,7 +430,8 @@ section{
     &__inner{
         display: flex;
         gap: 10px;
-        margin: 20px 0;
+        padding-bottom: 50px;
+        
         flex-wrap: wrap;
         & img{
             width: 340px;
@@ -441,8 +443,54 @@ section{
         }
     }
 }
+.contacts{
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        min-width: 250px;
+        max-width: 1000px;
+        margin: 10px 20px;
+    }
+}
+.news{
+    &__inner{display: flex; flex-wrap: wrap; gap: 10px;}
+    &__item{
+        &:nth-child(3n){
+            flex-direction: row-reverse;
+        }
+        &:nth-child(4n){
+            flex-direction: row-reverse;
+        }
+        display: flex;
+        width: 600px;
+        border: 1px solid $additional-accent-color;
+        & img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+
+        }
+    }
+    &__content{
+        width: 300px;
+        padding: 10px;
+    }
+    &__title{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+    }
+    &__txt{
+        text-align: justify;
+    }
+}
 footer{
     background-color: $second-color;
     color: white;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
