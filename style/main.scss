@@ -205,6 +205,7 @@ section{
             display: flex;
             flex-direction: column;
             gap: 24px;
+            padding-bottom: 25px;
             & LI:nth-child(EVEN){
                 position: relative;
                 left: 45px;

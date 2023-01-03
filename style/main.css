@@ -199,6 +199,7 @@ section > div {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding-bottom: 25px;
 }
 .about__inner .c30 ul LI:nth-child(even) {
   position: relative;
