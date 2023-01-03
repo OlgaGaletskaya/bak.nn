@@ -1,0 +1,106 @@
+@media (max-width:1299px){
+    .banner{
+        &__title{
+        }
+    }
+}
+@media (max-width:1199px){
+    header{
+        nav{
+            font-size: 1rem;
+            & a.logo{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .section{
+        &__title{
+            font-size: 2.5rem;
+        }
+        &__subtitle{
+            font-size: 1.3rem;
+        }
+    }
+    .banner{
+        &__title{
+            font-size: 5rem;
+        }
+    }
+    
+}
+@media (max-width:899px){
+    .about__inner .c30 ul li a p{
+        font-size: 1.2rem;
+    }
+    .banner__additional img{
+        width: 270px;
+    }
+    .about__inner .c30{
+        min-width: 358px;
+    }
+    .contacts{
+        width: 100%;
+    }
+    .nav-menu{
+        & ul{
+            display: none;
+        }
+        
+    }
+    .banner{
+        &__inner{
+            width: 50%;
+        }
+        &__title{
+            font-size: 3rem;
+        }
+    }
+}
+@media (max-width:699px){
+    .btn{
+        &__action, &__more{
+            font-size: 1.5rem;
+        }
+    }
+    .banner{
+        height: fit-content;
+        &__content{
+            font-size: 1.5rem;
+        }
+        &__inner{
+            width: 100%;
+        }
+        &__additional{
+            position: relative;
+            display: flex;
+            & a {
+                width: 100%;
+            }
+            & img{
+                width: 100%;
+            }
+
+        }
+    }
+    .about__inner{
+        display: block;
+        & .c30{
+            float: none;
+            margin: 30px;
+        }
+    }
+}
+@media (max-width:499px){
+    .contacts__links{display: none !important;}
+    .about__inner .c30 {
+        min-width: 150px;
+        width: max-content;
+    }
+    .about__inner .c30 ul li a p{font-size: 1rem;}
+    .map .hex180{
+        display: none;
+    }
+    section.price{
+        display: none;
+    }
+}
